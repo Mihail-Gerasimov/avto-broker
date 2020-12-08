@@ -16,7 +16,7 @@
     <!-- modal-windows -->
     <!-- Button trigger modal -->
 
-    <!-- Modal -->
+
     <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -29,55 +29,68 @@
                 <div class="modal-body p-0">
 
                     <div class="row m-0">
-                        <div class="modal-data col-6 p-0">
-                            <input type="text" placeholder="" class="modal-data__item border-bottom-1">
-                            <input type="text" placeholder="" class="modal-data__item border-bottom-1">
-                            <input type="text" placeholder="" class="modal-data__item border-bottom-1">
-                            <input type="text" placeholder="" class="modal-data__item border-bottom-1">
+                        <div class="modal-data d-flex flex-column col-6 p-0 mb-5">
+                            <input class="box-form__item pl-3 py-2 mb-4" type="text" placeholder="ФИО*">
+                            <input class="box-form__item pl-3 py-2 mb-4" type="text" placeholder="Дата рождения*">
+                            <input class="box-form__item pl-3 py-2 mb-4" type="text" placeholder="Паспорт (серия, номер, кем выдан)*">
+                            <input class="box-form__item pl-3 py-2 mb-5" type="tel" placeholder="+7 (___) - ___ - __ - __">
+                        </div>
+                        <div class="modal-picture">
+                            <img src="./img/header/car.png" alt="">
                         </div>
                     </div>
 
+                    advantages
+
                 </div>
-                <div class="modal-footer justify-content-start border-top-0 p-0">
-                    <button type="button" class="btn btn-primary">Отправить заявку</button>
+                <div class="modal-footer justify-content-start border-top-0 p-0 m-0">
+                    <input class="box-form__btn box-form__btn--modal align-self-center m-0
+                            " type="submit" value="Отправить заявку" class="mx-auto">
+                    <p class="box-form__info--modal">Нажимая кнопку "Отправить заявку", вы даете согласие на обработку персональных данных</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal-thanks">
+        <div class="row d-flex flex-column">
+            <button>&times;</button>
+            <h5 class="modal-title mb-5">Ваша заявка отправлена!</h5>
+        </div>
+    </div>
 
     <!-- modal-windows -->
 
     <section class="header">
 
-        <nav class="navbar px-0 navbar-expand-xl navbar-light py-4">
+        <nav class="navbar px-0 navbar-expand-lg navbar-light py-4">
 
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
             <a href="index.html" class="navbar-brend flex-column text-decoration-none d-flex align-items-center">
-                <img src="img/header/logo.png" alt="logo" class="logo-img">
+                <img class="header-logo" src="img/header/logo.png" alt="logo" class="logo-img">
             </a>
-            <a href="tel:+7 (391) 215-55-98" class="btn phone-mobile p-0 d-block d-xl-none"><img src="./img/header/pone-mobile.png" alt="phone"></a>
+            <a href="tel:+7 (391) 215-55-98" class="btn phone-mobile p-0 d-block d-lg-none"><img src="./img/header/pone-mobile.png" alt="phone"></a>
 
-            <div class="click-map d-none d-xl-flex">
+            <div class="click-map">
                 <img src="./img/header/marker.png" alt="marker">
                 <p>п. Солонцы, Котельникова, 9 Б стр. 1. Работаем ежедневно с 09:00 до 19:00
                 </p>
             </div>
 
             <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-                <ul class="navbar-nav my-4 my-xl-0">
-                    <li class="">
+                <ul class="navbar-nav">
+                    <li class="navbar-nav--item">
                         <a class="link" href="#">Преимущества</a>
                     </li>
-                    <li class="">
+                    <li class="navbar-nav--item">
                         <a class="link" href="#">Схема работы</a>
                     </li>
-                    <li class="">
+                    <li class="navbar-nav--item">
                         <a class="link" href="#">Партнеры</a>
                     </li>
-                    <li class="">
+                    <li class="navbar-nav--item">
                         <a class="link" href="#">Контакты</a>
                     </li>
                 </ul>
@@ -87,7 +100,7 @@
                     <button class="btn bell-header" data-toggle="modal" data-target="#exampleModal">Заказать обратный звонок</button>
                 </div>
 
-                <div class="click-map d-flex d-xl-none">
+                <div class="click-map d-flex d-lg-none">
                     <img src="./img/header/marker.png" alt="marker">
                     <p>п. Солонцы, Котельникова, 9 Б стр. 1. Работаем ежедневно с 09:00 до 19:00
                     </p>
@@ -95,8 +108,8 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="avto">
+        <div class="container overflow-hidden">
+            <div class="avto overflow-hidden">
 
                 <h1 class="avto__title title-medium">
                     Продажа автомобилей в кредит на выгодных условиях!
@@ -108,7 +121,6 @@
             </div>
             <img class="header-car" src="./img/header/car.png" alt="car">
         </div>
-
     </section>
 
     <section class="advantages container-fluid">
