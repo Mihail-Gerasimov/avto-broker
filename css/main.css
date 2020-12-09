@@ -136,12 +136,24 @@ button:focus {
   text-transform: uppercase;
   color: #091830;
 }
+@media (max-width: 768px) {
+  .title-multi {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
 .title-bottom {
   text-transform: uppercase;
   font-size: 36px;
   line-height: 44px;
   color: #FB620B;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .title-bottom {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 .header {
   background: url(../img/header/fon-header.png);
@@ -510,14 +522,49 @@ button:focus {
   margin-right: 160px;
 }
 .modal-thanks {
-  z-index: 1;
+  z-index: 2;
   background: #FFFFFF;
   border: 1px solid #D8DADB;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 27px 35px 0px 80px;
+  position: fixed;
+  width: 450px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.modal-thanks__title {
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  padding-top: 75px;
+  margin-bottom: 35px;
+}
+.modal-thanks--btn {
+  background-color: #fff;
+  font-size: 35px;
+  color: #C4C4C4;
   position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.modal-thanks__time {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #535353;
+  margin-bottom: 310px;
+}
+.accepted__car {
+  max-width: 510px;
+  bottom: 0;
+  position: absolute;
+  right: -95px;
 }
 .advantages {
   background-repeat: no-repeat;
@@ -537,9 +584,9 @@ button:focus {
           box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   width: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -575,6 +622,48 @@ button:focus {
 .steps {
   margin-bottom: 150px;
 }
+@media (max-width: 992px) {
+  .steps {
+    margin-bottom: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .steps {
+    margin-bottom: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .steps {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .steps-title {
+    width: 300px;
+  }
+}
+@media (max-width: 1133px) {
+  .steps__card:nth-child(3) {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .steps__card {
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+  .steps__card:last-child {
+    margin-bottom: 0px;
+  }
+  .steps__card:nth-child(3) {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .steps__card--individ {
+    width: 290px;
+  }
+}
 .steps__card--block {
   position: relative;
 }
@@ -590,6 +679,16 @@ button:focus {
   top: 6px;
   right: -40px;
 }
+@media (max-width: 1250px) {
+  .arrow {
+    right: 59px;
+  }
+}
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
 .arrow__line {
   left: -294px;
   position: absolute;
@@ -597,12 +696,29 @@ button:focus {
   width: 300px;
   top: 8px;
 }
+@media (max-width: 1250px) {
+  .arrow__line {
+    width: 210px;
+    left: -204px;
+  }
+}
+@media (max-width: 768px) {
+  .arrow__line {
+    display: none;
+  }
+}
 .card--block__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   color: #091830;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .card--block__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .card--block__one {
   font-weight: normal;
@@ -612,6 +728,17 @@ button:focus {
   color: #000000;
   width: 375px;
 }
+@media (max-width: 768px) {
+  .card--block__one {
+    width: 325px;
+  }
+}
+@media (max-width: 700px) {
+  .card--block__one {
+    width: 288px;
+    font-size: 16px;
+  }
+}
 .card--block__two {
   font-weight: normal;
   font-size: 18px;
@@ -619,6 +746,12 @@ button:focus {
   margin-bottom: 40px;
   color: #535353;
   width: 300px;
+}
+@media (max-width: 700px) {
+  .card--block__two {
+    width: 265px;
+    font-size: 16px;
+  }
 }
 .card--block__click {
   font-weight: normal;

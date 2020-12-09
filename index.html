@@ -52,10 +52,16 @@
         </div>
     </div>
 
-    <div class="modal-thanks">
-        <div class="row d-flex flex-column">
-            <button>&times;</button>
-            <h5 class="modal-title mb-5">Ваша заявка отправлена!</h5>
+    <div class="modal-thanks" style="display: none;">
+        <div class="accepted">
+            <h5 class="modal-thanks__title text-center">Ваша заявка<br>отправлена!</h5>
+            <button class="modal-thanks--btn p-0">
+                <span>&times;</span>
+            </button>
+            <p class="modal-thanks__time">
+                Ожидайте. В течении дня с<br>вами свяжется наш менеджер!
+            </p>
+            <img class="accepted__car" src="./img/header/car.png" alt="">
         </div>
     </div>
 
@@ -132,7 +138,8 @@
 
             </h2>
 
-            <div class="row justify-content-between">
+            <div class="multiple-items row justify-content-between">
+
                 <div class="advantages__card">
                     <h1 class="advantages__card--title">6<span>%</span></h1>
                     <p class="card--info">Автокредит от 6%</p>
@@ -157,6 +164,7 @@
                     <img src="./img/advantages/doc.png" alt="img" class="crad--picture">
                     <p class="card--info">По 2-м документам</p>
                 </div>
+
             </div>
 
         </div>
@@ -165,14 +173,14 @@
     <section class="steps">
         <div class="container">
 
-            <h2 class="title-multi advantages-title">
+            <h2 class="title-multi steps-title">
                 Три простых шага<br><span class="title-bottom">для покупки авто в кредит</span>
 
             </h2>
 
             <div class="row">
-                <div class="steps__card col-12 col-xl-4 d-flex align-items-center flex-column">
-                    <img src="./img/steps/mini-car.png" alt="car" class="card__stages py-5">
+                <div class="steps__card  d-flex align-items-center flex-column mx-auto">
+                    <img src="./img/steps/mini-car.png" alt="car" class="steps__card--individ py-5">
                     <div class="steps__card--block">
                         <h3 class="steps__title">Шаг 1</h3>
                         <div class="arrow">
@@ -187,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="steps__card col-12 col-xl-4 d-flex align-items-center flex-column">
+                <div class="steps__card d-flex align-items-center flex-column mx-auto">
                     <img src="./img/steps/women.png" alt="women" class="card__stages">
                     <div class="steps__card--block">
                         <h3 class="steps__title">Шаг 2</h3>
@@ -204,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="steps__card col-12 col-xl-4 d-flex align-items-center flex-column">
+                <div class="steps__card  d-flex align-items-center flex-column mx-auto">
                     <img src="./img/steps/rights.png" alt="rights" class="card__stages pt-5 pb-3">
                     <div class="steps__card--block">
                         <h3 class="steps__title">Шаг 3</h3>
