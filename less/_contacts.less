@@ -1,5 +1,9 @@
 .contacts{
     padding-top: 35px;
+@media (max-width: 576px) {
+    padding-top: 280px;
+}
+
 }
 
 .contacts-card{
@@ -10,14 +14,34 @@ box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 border-radius: 10px;
 padding: 44px 0 80px 38px;
 width: 380px;
-
 position: absolute;
 top: -35px;
 right: 405px;
+@media (max-width: 1340px){
+    right: 260px;
+}
+@media (max-width: 992px) {
+    right: 150px;
+}
+@media (max-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+}
+@media (max-width: 576px) {
+    top: -280px;
+    padding: 30px 0 50px 35px;
+    width: 310px;
+}
+
 }
 
 .card--item__info{
     margin-bottom: 30px;
+@media (max-width: 576px) {
+    width: 270px;
+}
+
 }
 
 .card--underline__item{
@@ -38,4 +62,10 @@ line-height: 29px;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
+}
+
+iframe{
+    @media (max-width: 576px) {
+        height: 400px;
+    }
 }
