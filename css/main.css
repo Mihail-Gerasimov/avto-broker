@@ -484,6 +484,7 @@ button:focus {
 }
 @media (max-width: 576px) {
   .header-car {
+    display: none;
     width: auto;
     max-width: 606px;
     top: 513px;
@@ -502,6 +503,24 @@ button:focus {
     max-width: 320px;
     top: 506px;
     right: -70px;
+  }
+}
+.car-mobile-header {
+  position: absolute;
+  display: none;
+}
+@media (max-width: 576px) {
+  .car-mobile-header {
+    display: block;
+    width: 400px;
+    right: 0;
+    bottom: -102px;
+  }
+}
+@media (max-width: 426px) {
+  .car-mobile-header {
+    width: 300px;
+    bottom: -115px;
   }
 }
 .modal-content {
