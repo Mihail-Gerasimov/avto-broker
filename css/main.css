@@ -616,7 +616,7 @@ button:focus {
   }
 }
 .modal-thanks {
-  z-index: 2;
+  z-index: 20;
   background: #FFFFFF;
   border: 1px solid #D8DADB;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
@@ -630,6 +630,11 @@ button:focus {
   margin-right: auto;
   margin-top: 50px;
 }
+@media (max-width: 576px) {
+  .modal-thanks {
+    width: 290px;
+  }
+}
 .modal-thanks__title {
   color: black;
   font-weight: bold;
@@ -637,6 +642,12 @@ button:focus {
   line-height: 44px;
   padding-top: 75px;
   margin-bottom: 35px;
+}
+@media (max-width: 576px) {
+  .modal-thanks__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 .modal-thanks--btn {
   background-color: #fff;
@@ -654,11 +665,40 @@ button:focus {
   color: #535353;
   margin-bottom: 310px;
 }
+@media (max-width: 576px) {
+  .modal-thanks__time {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 260px;
+  }
+}
 .accepted__car {
   max-width: 510px;
   bottom: 0;
   position: absolute;
   right: -95px;
+}
+@media (max-width: 640px) {
+  .accepted__car {
+    max-width: 480px;
+    right: -55px;
+  }
+}
+@media (max-width: 576px) {
+  .accepted__car {
+    display: none;
+  }
+}
+.accepted__car--little {
+  display: none;
+}
+@media (max-width: 576px) {
+  .accepted__car--little {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: -20px;
+  }
 }
 .advantages {
   background-repeat: no-repeat;

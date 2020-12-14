@@ -360,7 +360,7 @@ margin-bottom: 20px;
 }
 
 .modal-thanks{
-z-index: 2;
+z-index: 20;
 background: #FFFFFF;
 border: 1px solid #D8DADB;
 box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
@@ -372,6 +372,9 @@ right: 0;
 margin-left: auto;
 margin-right: auto;
 margin-top: 50px;
+@media (max-width: 576px) {
+    width: 290px;
+}
 }
 .modal-thanks__title{
     color: black;
@@ -380,6 +383,11 @@ margin-top: 50px;
     line-height: 44px;
     padding-top: 75px;
     margin-bottom: 35px;
+@media (max-width: 576px) {
+    font-size: 24px;
+line-height: 29px;
+}
+
 }
 .modal-thanks--btn{
     background-color: #fff;
@@ -397,6 +405,11 @@ line-height: 22px;
 text-align: center;
 color: #535353;
 margin-bottom: 310px;
+@media (max-width: 576px) {
+    font-size: 14px;
+line-height: 17px;
+margin-bottom: 260px;
+}
 }
 
 .accepted__car{
@@ -404,4 +417,21 @@ margin-bottom: 310px;
     bottom: 0;
     position: absolute;
     right: -95px;
+    @media (max-width: 640px) {
+    max-width: 480px;
+    right: -55px;
+    }
+@media (max-width: 576px) {
+    display: none;
+}
+}
+
+.accepted__car--little{
+    display: none;
+    @media (max-width: 576px) {
+        display: block;
+        position: absolute;
+        bottom: 25px;
+    right: -20px;
+    }
 }
